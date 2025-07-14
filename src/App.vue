@@ -1,3 +1,9 @@
+<script setup>
+import { useCommonStore } from '@/store/common';
+const commonStore = useCommonStore();
+commonStore.loadLanguage();
+</script>
+
 <template>
     <router-view />
     <!-- <Transition name="fade">

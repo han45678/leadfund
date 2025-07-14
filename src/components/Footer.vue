@@ -1,5 +1,8 @@
 <script setup>
 import { ref } from 'vue'
+import { useCommonStore } from '@/store/common';
+
+const commonStore = useCommonStore();
 const count = ref(0)
 </script>
 
@@ -12,7 +15,10 @@ const count = ref(0)
             <span class="icon">
               <img src="/images/footer/icon01.png" alt="icon">
             </span>
-            行情
+            <span class="text">
+              {{ commonStore.language.footer.market }}
+              <!-- 行情 -->
+            </span>
           </router-link>
         </li>
         <li>
@@ -20,7 +26,10 @@ const count = ref(0)
             <span class="icon">
               <img src="/images/footer/icon02.png" alt="icon">
             </span>
-            資訊
+            <span class="text">
+              {{ commonStore.language.footer.news }}
+              <!-- 資訊 -->
+            </span>
           </router-link>
         </li>
         <li>
@@ -28,7 +37,10 @@ const count = ref(0)
             <span class="icon">
               <img src="/images/footer/icon03.png" alt="icon">
             </span>
-            首頁
+            <span class="text">
+              {{ commonStore.language.footer.homePage }}
+              <!-- 首頁 -->
+            </span>
           </router-link>
         </li>
         <li>
@@ -36,7 +48,10 @@ const count = ref(0)
             <span class="icon">
               <img src="/images/footer/icon04.png" alt="icon">
             </span>
-            財富
+            <span class="text">
+              {{ commonStore.language.footer.wealth }}
+              <!-- 財富 -->
+            </span>
           </router-link>
         </li>
         <li>
@@ -44,7 +59,10 @@ const count = ref(0)
             <span class="icon">
               <img src="/images/footer/icon05.png" alt="icon">
             </span>
-            個人中心
+            <span class="text">
+              {{ commonStore.language.footer.profile }}
+              <!-- 個人中心 -->
+            </span>
           </router-link>
         </li>
       </ul>
@@ -76,7 +94,7 @@ const count = ref(0)
     ul {
       display: flex;
       align-items: center;
-      justify-content: space-evenly;
+      justify-content: space-around;
 
       li {
         a {
@@ -85,6 +103,18 @@ const count = ref(0)
           font-size: 12px;
           font-weight: 400;
           color: #999;
+          text-align: center;
+          .icon{
+            display: block;
+            img{
+              width: 25px;
+            }
+          }
+          .text{
+            text-align: center;
+            display: block;
+            margin-top: 5px;
+          }
         }
       }
     }

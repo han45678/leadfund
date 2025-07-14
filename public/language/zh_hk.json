@@ -1,0 +1,28 @@
+{
+    "home": {
+        "myBonus": "我的獎金",
+        "recharge": "我要充值",
+        "withdraw": "提現",
+        "myInvestment": "我的投資",
+        "recommendTitle": "新手推薦 簡單方便，小白也能投資",
+        "hotTitle": "熱門投資 收益可觀，攻守兼備",
+        "more": "更多",
+        "minInvestment": "起投份額",
+        "investmentPeriod": "投資週期",
+        "unitPrice": "單價",
+        "maxInvestment": "最大投資份額",
+        "dailyYield": "日收益率",
+        "pleaseEnterMinInvestment": "請輸入起投份額數",
+        "availableInvestment": "可投份額數",
+        "investNow": "立即投資",
+        "confirm": "確認",
+        "cancel": "取消"
+    },
+    "footer": {
+        "market": "行情",
+        "news": "資訊",
+        "homePage": "首頁",
+        "wealth": "財富",
+        "profile": "個人中心"
+    }
+}
